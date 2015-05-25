@@ -1,0 +1,123 @@
+/**
+ * @version $Id: custom.css 10237 2012-02-14 11:46:04Z dixonn $
+ * @author Noxidsoft - Noel Dixon
+ * @package Noxidsoft
+ * @subpackage nox_gov_local
+ * @copyright Copyright (C) 2007 - 2012 Noxidsoft. All rights reserved.
+ * @license Proprietary software, please refer to www.noxidsoft.com
+ */
+
+/* Custom box sets */
+/* _box1 start */
+.moduletable_box1 {
+	margin									: 10px 0;
+	padding-bottom					: 10px;
+	border									: 1px solid #009BEE;
+	border-radius						: 7px;
+	color										: #766D65;
+}
+
+.moduletable_box1 h3 {
+	padding-left						: 10px;
+}
+
+.moduletable_box1 li {
+	list-style-type					: square;
+	margin-left							: 2em;
+}
+
+.moduletable_box1 ul li {
+	font-size								: 0.9em;
+}
+
+.moduletable_box1 ul li a {
+	text-decoration					: none;
+	color										: #766D65;
+}
+
+.moduletable_box1 ul li a:hover {
+	color										: #000;
+	text-decoration					: underline;
+}
+
+/* _box2 start */
+.moduletable_box2 {
+	margin									: 10px 0;
+	padding-bottom					: 10px;
+	border									: 1px solid transparent;
+	color										: #766D65;
+}
+
+.moduletable_box2 li {
+	list-style-type					: circle;
+	margin-left							: 1em;
+}
+
+.moduletable_box2:hover {
+	border									: 1px solid #00689c;
+	border-radius						: 7px;
+	background							: #f2f0f0;
+}
+
+
+.moduletable_box2 h3, .moduletable_box2 h3 a {
+	padding-left						: 10px;
+	color										: #1A609E;
+}
+
+.moduletable_box2 h3 a:hover {
+	color										: #0f92da;
+	text-decoration					: underline;
+}
+
+.moduletable_box2 ul li {
+	font-size								: 0.9em;
+}
+
+.moduletable_box2 ul li a {
+	text-decoration					: none;
+	color										: #000;
+}
+
+.moduletable_box2 ul li a:hover {
+	color										: #000;
+	text-decoration					: underline;
+}
+
+/* _box3 start */
+.moduletable_box3 {
+	margin									: 10px 0;
+	padding-bottom					: 10px;
+	border									: 5px double #E9E9E9;
+	border-radius						: 7px;
+	color										: #766D65;
+}
+
+.moduletable_box3 li {
+	list-style-type					: circle;
+	margin-left							: 1em;
+}
+
+.moduletable_box3 h3, .moduletable_box3 h3 a {
+	padding-left						: 10px;
+	color										: #A22020;
+}
+
+.moduletable_box3 h3 a:hover {
+	color										: #0f92da;
+	text-decoration					: underline;
+}
+
+.moduletable_box3 ul li {
+	font-size								: 0.9em;
+}
+
+.moduletable_box3 ul li a {
+	text-decoration					: none;
+	color										: #000;
+}
+
+.moduletable_box3 ul li a:hover {
+	color										: #000;
+	text-decoration					: underline;
+}

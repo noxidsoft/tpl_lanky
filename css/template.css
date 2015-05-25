@@ -1,0 +1,235 @@
+/**
+ * @version $Id: template.css 10237 2012-02-10 01:46:24Z dixonn $
+ * @author Noxidsoft - Noel Dixon
+ * @package Noxidsoft
+ * @subpackage nox_gov_local
+ * @copyright Copyright (C) 2007 - 2012 Noxidsoft. All rights reserved.
+ * @license Proprietary software, please refer to www.noxidsoft.com
+ */
+
+body {
+	margin									: 0;
+	padding									: 0;
+	border									: 0;			/* This removes the border around the viewport in old versions of IE */
+	width										: 100%;
+	background							: #fff;
+	min-width								: 600px;		/* Minimum width of layout - remove line if not required */
+																		/* The min-width property does not work in old versions of Internet Explorer */
+	font-size								: 90%;
+	font-family							: Arial, sans-serif;
+}
+a {
+	text-decoration					: none;
+	color										: #1a609e;
+}
+a:hover {
+	text-decoration					: none;
+}
+h2 {
+	border-bottom						: 1px solid #eaeaea;
+	color										: #1a609e;
+	font-family							: Tahoma, sans-serif;
+	font-size								: 2.3em;
+	font-weight							: 100;
+	margin-bottom						: 0.5em;
+	padding-bottom					: 0.4em;
+	text-align							: left;
+}
+h1, h2, h3 {
+	
+}
+p {
+	
+}
+img {
+	margin									: 10px 0 5px;
+}
+
+/* This block controls fixed width center aligned site */
+#wrapper {
+	margin									: 0 auto; 
+	border									: 0;
+	padding									: 0; 
+	/*width										: 960px;*/ /* controlled from Basic Options in the template UI */ 
+	text-align							: left;
+}
+
+
+/* Joomla specific styling start */
+/* Content */
+ul.actions {
+	margin									: -50px 0;
+	padding									: 0;
+	float										: right;
+}
+ul.actions li {
+	position								: relative;
+	display									: inline;
+	list-style							: none;
+}
+#col2top .search {
+	padding-top							: 10px;
+}
+#col2top .custom {
+	position								: absolute;
+	right										: 220px;
+}
+#contentTop .breadcrumbs {
+	position								: relative;
+	left										: 5px;
+	padding-bottom					: 5px;
+}
+
+#contentTop .breadcrumbs a, #contentTop .breadcrumbs span {
+	position								: relative;
+	bottom									: 4px;
+}
+
+#contentTop .breadcrumbs a {
+	color										: #000000;
+	text-decoration					: underline;
+}
+/* Joomla specific end */
+
+/* Top styles */
+#container2top {
+	clear										: left;
+	float										: left;
+	width										: 100%;
+	overflow								: hidden;
+	/*background							: #004CB8;  column 2 background colour */
+	background							: url("../images/header.jpg") no-repeat scroll left top #136BC5;
+	height									: 90px;
+	border-bottom						: 2px solid #ffffff;
+}
+#container1top {
+	float										: left;
+	width										: 100%;
+	position								: relative;
+	right										: 50%;
+	background							: transparent; /* column 1 background colour */
+}
+#col1top {
+	float										: left;
+	width										: 46%;
+	position								: relative;
+	left										: 52%;
+	overflow								: hidden;
+	color										: #ffffff;
+	font-size								: 0.8em;
+}
+#col2top {
+	float										: left;
+	width										: 46%;
+	position								: relative;
+	left										: 56%;
+	overflow								: hidden;
+	text-align							: right;
+	color										: #ffffff;
+	font-size								: 0.8em;
+}
+
+#col2top .custom {
+	float										: left;
+	color										: #fff;
+}
+
+#col2top .custom a {
+	color										: #fff;
+}
+
+#col2top .custom a:hover {
+	text-decoration					: underline;
+}
+
+/* Header styles */
+#header {
+	clear										: both;
+	float										: left;
+	width										: 100%;
+	border-bottom						: 1px solid #ffffff;
+	background							: #000000;
+	color										: #ffffff;
+	font-size								: 0.8em;
+	line-height							: 0.6em;
+}
+
+/* Breadcrumb styles */
+#contentTop {
+	display									: block;
+	clear										: both;
+	float										: left;
+	width										: 100%;
+	background							: #f0f0f0;
+	color										: #000000;
+	font-size								: 0.8em;
+}
+
+/* column container */
+.colmask {
+	position								: relative;	/* This fixes the IE7 overflow hidden bug */
+	clear										: both;
+	float										: left;
+	width										: 100%;			/* width of whole page */
+	overflow								: hidden;		/* This chops off any overhanging divs */
+}
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+	float										: left;
+	width										: 100%;			/* width of page */
+	position								: relative;
+}
+.col1,
+.col2,
+.col3 {
+	float										: left;
+	position								: relative;
+	padding									: 0 0 1em 0;	/* no left and right padding on columns, we just make them narrower instead only padding top and bottom is included here, make it whatever value you need */
+	overflow								: hidden;
+}
+/* 3 Column settings */
+.threecol {
+	background							: #fff;		/* right column background colour */
+}
+.threecol .colmid {
+	right										: 25%;			/* width of the right column */
+	background							: #fff;		/* center column background colour */
+}
+.threecol .colleft {
+	right										: 50%;			/* width of the middle column */
+	background							: #fff;	/* left column background colour */
+}
+.threecol .col1 {
+	width										: 46%;			/* width of center column content (column width minus padding on either side) */
+	left										: 102%;			/* 100% plus left padding of center column */
+}
+.threecol .col2 {
+	width										: 21%;			/* Width of left column content (column width minus padding on either side) */
+	left										: 31%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+}
+.threecol .col3 {
+	width										: 21%;			/* Width of right column content (column width minus padding on either side) */
+	left										: 85%;			/* Please make note of the brackets here: (100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+}
+
+/* Footer styles */
+#footer {
+	clear										: both;
+	float										: left;
+	width										: 100%;
+	border-top							: 1px solid #000;
+	background							: #136BC5;
+	color										: #fff;
+	text-align							: center;
+	font-size								: 0.8em;
+}
+#footer a {
+	color										: #fff;
+	text-decoration					: underline;
+}
+#footer p {
+	padding									: 10px;
+	margin									: 0;
+}

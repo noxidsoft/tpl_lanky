@@ -1,0 +1,87 @@
+/**
+ * @version $Id: menu.css 10237 2012-02-14 11:46:04Z dixonn $
+ * @author Noxidsoft - Noel Dixon
+ * @package Noxidsoft
+ * @subpackage nox_gov_local
+ * @copyright Copyright (C) 2007 - 2012 Noxidsoft. All rights reserved.
+ * @license Proprietary software, please refer to www.noxidsoft.com
+ */
+ 
+/* Header menu */
+#header .menu li {
+	display							: inline;
+}
+
+#header .menu li a {
+	color								: #ffffff;
+	text-decoration			: none;
+	padding							: 0.6em 1em;
+}
+
+#header .menu li a:hover {
+	background					: #A9211D;
+	text-decoration			: none;
+}
+
+/* active highlighting for selected menu(s) start */
+#left ul {
+	list-style-type			: none;
+	padding							: 0;
+	margin							: 0;
+}
+
+#left ul.menu {
+	margin							: 0;
+	padding							: 20px 0;
+}
+
+#left ul.menu li ul {
+	background					: #F0F0F0;
+}
+
+#left ul.menu li.current {
+	display							: block;
+	background					: #BD3632;
+	color								: #ffffff;
+	font-weight					: bold;
+}
+
+#left ul.menu li.deeper {										
+	background					: #BD3632;
+	color								: #ffffff;
+	font-weight					: bold;
+}
+
+#left ul.menu li.parent:before {						/* shows sublinks available +symbol */
+	content: "+ ";
+}
+
+#left ul.menu li.active ul li {
+	padding-left				: 1em;
+	background					: none;
+}
+
+#left ul.menu li.active, #left ul.menu li.active ul li, #left ul.menu li {
+	border-top					: 1px solid #FEF8F2;
+}
+
+#left ul.menu li a {
+	color								: #666666;
+}
+
+#left ul.menu li.active a {									/* this affects leading/parent menu item */
+  color              	: #ffffff; 
+  font-weight        	: bold;
+}
+
+#left ul.menu li.active ul li a {    				/* this affects all submenus */
+  background					: none;
+  color              	: #666666;
+	font-weight        	: normal;
+}
+
+#left ul.menu li ul li.current a {   /* current menu only */
+  color              	: #0e0e0e;
+  font-weight					: bold;  
+}
+/* active highlighting for selected menu(s) stop */ 
